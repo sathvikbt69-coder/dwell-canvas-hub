@@ -14,7 +14,7 @@ const clients = [
 
 const TrustBar = () => {
   return (
-    <section className="bg-secondary/50 border-y border-border/30">
+    <section className="section-stone border-y border-border/40">
       {/* Metrics */}
       <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-2 md:grid-cols-4 gap-8">
         {metrics.map((m, i) => (
@@ -33,12 +33,12 @@ const TrustBar = () => {
       </div>
 
       {/* Client marquee */}
-      <div className="border-t border-border/30 py-6 overflow-hidden">
+      <div className="border-t border-border/40 py-6 overflow-hidden">
         <div className="flex animate-marquee whitespace-nowrap">
           {[...clients, ...clients].map((name, i) => (
             <span
               key={i}
-              className="mx-8 text-muted-foreground/50 text-lg font-heading tracking-wider uppercase"
+              className="mx-8 text-muted-foreground/60 text-lg font-heading tracking-wider uppercase"
             >
               {name}
             </span>

@@ -29,7 +29,7 @@ const CostCalculator = () => {
   const high = Math.round((space.rate[1] * sqft * t.multiplier) / 100000);
 
   return (
-    <section id="calculator" className="section-padding">
+    <section id="calculator" className="section-padding section-stone">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -62,10 +62,10 @@ const CostCalculator = () => {
                 <button
                   key={s.id}
                   onClick={() => setSpaceType(s.id)}
-                  className={`py-3 px-4 rounded-lg text-sm font-heading transition-all ${
+                  className={`py-3 px-4 rounded-xl text-sm font-heading transition-all ${
                     spaceType === s.id
-                      ? "bg-primary text-primary-foreground"
-                      : "bg-secondary text-muted-foreground hover:text-foreground"
+                      ? "bg-primary text-primary-foreground shadow-sm"
+                      : "bg-muted text-muted-foreground hover:text-foreground"
                   }`}
                 >
                   {s.label}
@@ -87,7 +87,7 @@ const CostCalculator = () => {
               step={500}
               value={sqft}
               onChange={(e) => setSqft(Number(e.target.value))}
-              className="w-full accent-primary h-2 bg-secondary rounded-full appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-5 [&::-webkit-slider-thumb]:h-5 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-primary"
+              className="w-full accent-primary h-2 bg-muted rounded-full appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-5 [&::-webkit-slider-thumb]:h-5 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-primary"
             />
             <div className="flex justify-between text-xs text-muted-foreground mt-1 font-body">
               <span>500</span>
@@ -103,10 +103,10 @@ const CostCalculator = () => {
                 <button
                   key={t.id}
                   onClick={() => setTier(t.id)}
-                  className={`py-3 px-4 rounded-lg text-sm font-heading transition-all ${
+                  className={`py-3 px-4 rounded-xl text-sm font-heading transition-all ${
                     tier === t.id
-                      ? "bg-copper text-foreground"
-                      : "bg-secondary text-muted-foreground hover:text-foreground"
+                      ? "bg-copper text-white shadow-sm"
+                      : "bg-muted text-muted-foreground hover:text-foreground"
                   }`}
                 >
                   {t.label}
@@ -116,7 +116,7 @@ const CostCalculator = () => {
           </div>
 
           {/* Estimate */}
-          <div className="bg-secondary/60 rounded-xl p-6 text-center mb-8">
+          <div className="bg-muted rounded-xl p-6 text-center mb-8">
             <p className="text-sm text-muted-foreground font-body mb-2">Estimated Investment</p>
             <p className="font-heading text-4xl md:text-5xl font-bold text-foreground">
               ₹{low}L — ₹{high}L
@@ -142,9 +142,9 @@ const CostCalculator = () => {
                 setSubmitted(true);
               }}
             >
-              <Input placeholder="Your Name" required className="bg-secondary border-border text-foreground rounded-lg" />
-              <Input placeholder="Phone Number" type="tel" required className="bg-secondary border-border text-foreground rounded-lg" />
-              <Input placeholder="Email (optional)" type="email" className="bg-secondary border-border text-foreground rounded-lg" />
+              <Input placeholder="Your Name" required className="bg-muted border-border text-foreground rounded-xl" />
+              <Input placeholder="Phone Number" type="tel" required className="bg-muted border-border text-foreground rounded-xl" />
+              <Input placeholder="Email (optional)" type="email" className="bg-muted border-border text-foreground rounded-xl" />
               <Button
                 type="submit"
                 size="lg"

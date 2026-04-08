@@ -53,12 +53,12 @@ const PricingSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className={`glass-card p-8 flex flex-col ${
+              className={`glass-card p-8 flex flex-col hover:shadow-md transition-shadow ${
                 plan.accent ? "border-copper/50 ring-1 ring-copper/20" : ""
               }`}
             >
               {plan.accent && (
-                <span className="text-xs bg-copper/20 text-copper px-3 py-1 rounded-full self-start mb-4 font-body">
+                <span className="text-xs bg-copper/15 text-copper px-3 py-1 rounded-full self-start mb-4 font-body font-medium">
                   Most Popular
                 </span>
               )}
@@ -79,8 +79,8 @@ const PricingSection = () => {
               <Button
                 className={`w-full rounded-full ${
                   plan.accent
-                    ? "bg-copper text-foreground hover:bg-copper/90"
-                    : "bg-secondary text-foreground hover:bg-secondary/80"
+                    ? "bg-copper text-white hover:bg-copper/90"
+                    : "bg-muted text-foreground hover:bg-muted/80"
                 }`}
                 onClick={() => document.getElementById("calculator")?.scrollIntoView({ behavior: "smooth" })}
               >

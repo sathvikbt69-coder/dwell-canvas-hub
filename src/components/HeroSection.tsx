@@ -16,8 +16,8 @@ const HeroSection = () => {
         <source src="/hero-video.mp4" type="video/mp4" />
       </video>
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/40 to-background/90" />
+      {/* Light overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[rgba(245,243,238,0.75)] via-[rgba(245,243,238,0.45)] to-[rgba(245,243,238,0.85)]" />
 
       {/* Content */}
       <div className="relative z-10 flex flex-col justify-center h-full max-w-7xl mx-auto px-6">
@@ -50,7 +50,7 @@ const HeroSection = () => {
             <Button
               size="lg"
               variant="outline"
-              className="border-border text-foreground hover:bg-secondary rounded-full px-8 text-base"
+              className="border-foreground/20 text-foreground hover:bg-foreground/5 rounded-full px-8 text-base"
               onClick={() => document.getElementById("portfolio")?.scrollIntoView({ behavior: "smooth" })}
             >
               View Our Work

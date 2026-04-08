@@ -11,7 +11,7 @@ const steps = [
 
 const ProcessSection = () => {
   return (
-    <section id="process" className="section-padding bg-secondary/30">
+    <section id="process" className="section-padding">
       <div className="max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -27,7 +27,7 @@ const ProcessSection = () => {
 
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-px bg-border/60 md:-translate-x-px" />
+          <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-px bg-border md:-translate-x-px" />
 
           {steps.map((step, i) => (
             <motion.div
