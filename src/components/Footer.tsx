@@ -53,7 +53,7 @@ const Footer = () => {
       </div>
 
       <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-border/30 flex flex-col md:flex-row justify-between text-xs text-muted-foreground font-body">
-        <p>© 2026 Forma Interiors. All rights reserved.</p>
+        <p>© 2026 Worqo Interiors. All rights reserved.</p>
         <p>Designed with precision in Bangalore.</p>
       </div>
     </footer>
