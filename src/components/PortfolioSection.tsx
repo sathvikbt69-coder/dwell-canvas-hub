@@ -23,7 +23,7 @@ const PortfolioSection = () => {
   const filtered = active === "All" ? projects : projects.filter((p) => p.category === active);
 
   return (
-    <section id="portfolio" className="section-padding">
+    <section id="portfolio" className="section-padding section-stone">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -45,8 +45,8 @@ const PortfolioSection = () => {
               onClick={() => setActive(f)}
               className={`px-5 py-2 rounded-full text-sm font-heading transition-all ${
                 active === f
-                  ? "bg-primary text-primary-foreground"
-                  : "bg-secondary text-muted-foreground hover:text-foreground"
+                  ? "bg-primary text-primary-foreground shadow-sm"
+                  : "bg-card text-muted-foreground hover:text-foreground border border-border/60"
               }`}
             >
               {f}
@@ -64,7 +64,7 @@ const PortfolioSection = () => {
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.95 }}
-                className="group relative overflow-hidden rounded-xl"
+                className="group relative overflow-hidden rounded-xl shadow-sm"
               >
                 <img
                   src={p.img}
@@ -74,10 +74,10 @@ const PortfolioSection = () => {
                   height={800}
                   className="w-full aspect-[3/2] object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
                   <div>
-                    <h3 className="font-heading text-lg font-semibold text-foreground">{p.title}</h3>
-                    <p className="text-muted-foreground text-sm font-body">
+                    <h3 className="font-heading text-lg font-semibold text-white">{p.title}</h3>
+                    <p className="text-white/70 text-sm font-body">
                       {p.category} · {p.sqft}
                     </p>
                   </div>

@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const FinalCTA = () => {
   return (
-    <section id="contact" className="section-padding bg-secondary/50 border-y border-border/30">
+    <section id="contact" className="section-padding section-stone border-y border-border/40">
       <div className="max-w-4xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -35,7 +35,7 @@ const FinalCTA = () => {
             <Button
               size="lg"
               variant="outline"
-              className="border-border text-foreground hover:bg-secondary rounded-full px-8 text-base gap-2"
+              className="border-foreground/20 text-foreground hover:bg-foreground/5 rounded-full px-8 text-base gap-2"
               asChild
             >
               <a href="tel:+919876543210">
@@ -45,7 +45,7 @@ const FinalCTA = () => {
             </Button>
             <Button
               size="lg"
-              className="bg-copper text-foreground hover:bg-copper/90 rounded-full px-8 text-base"
+              className="bg-copper text-white hover:bg-copper/90 rounded-full px-8 text-base"
               onClick={() => document.getElementById("calculator")?.scrollIntoView({ behavior: "smooth" })}
             >
               Get Free Estimate

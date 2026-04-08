@@ -6,48 +6,52 @@
 
 @layer base {
   :root {
-    --background: 40 14% 6%;
-    --foreground: 40 20% 94%;
+    --background: 36 33% 95%;
+    --foreground: 0 0% 4%;
 
-    --card: 40 10% 10%;
-    --card-foreground: 40 20% 94%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 4%;
 
-    --popover: 40 10% 10%;
-    --popover-foreground: 40 20% 94%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 4%;
 
-    --primary: 153 60% 26%;
-    --primary-foreground: 40 20% 96%;
+    --primary: 153 60% 19%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 40 14% 14%;
-    --secondary-foreground: 40 20% 90%;
+    --secondary: 33 20% 90%;
+    --secondary-foreground: 0 0% 10%;
 
-    --muted: 40 10% 16%;
-    --muted-foreground: 40 10% 55%;
+    --muted: 33 15% 88%;
+    --muted-foreground: 0 0% 40%;
 
     --accent: 30 55% 50%;
-    --accent-foreground: 40 20% 96%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 40 10% 18%;
-    --input: 40 10% 18%;
-    --ring: 153 60% 26%;
+    --border: 33 15% 82%;
+    --input: 33 15% 82%;
+    --ring: 153 60% 19%;
 
-    --radius: 0.5rem;
+    --radius: 0.625rem;
 
     --ivory: 36 33% 95%;
+    --stone: 33 18% 85%;
     --copper: 30 55% 50%;
-    --forest: 153 60% 26%;
+    --forest: 153 60% 19%;
 
-    --sidebar-background: 40 14% 8%;
-    --sidebar-foreground: 40 20% 94%;
-    --sidebar-primary: 153 60% 26%;
-    --sidebar-primary-foreground: 40 20% 96%;
-    --sidebar-accent: 40 10% 14%;
-    --sidebar-accent-foreground: 40 20% 90%;
-    --sidebar-border: 40 10% 18%;
-    --sidebar-ring: 153 60% 26%;
+    --footer-bg: 0 0% 8%;
+    --footer-foreground: 36 33% 95%;
+
+    --sidebar-background: 36 33% 95%;
+    --sidebar-foreground: 0 0% 4%;
+    --sidebar-primary: 153 60% 19%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 33 20% 90%;
+    --sidebar-accent-foreground: 0 0% 10%;
+    --sidebar-border: 33 15% 82%;
+    --sidebar-ring: 153 60% 19%;
   }
 }
 
@@ -87,7 +91,11 @@
     @apply px-6 py-20 md:px-12 lg:px-20 lg:py-28;
   }
 
+  .section-stone {
+    background-color: hsl(var(--stone));
+  }
+
   .glass-card {
-    @apply bg-card/60 backdrop-blur-sm border border-border/50 rounded-lg;
+    @apply bg-card border border-border/60 rounded-xl shadow-sm;
   }
 }

@@ -24,7 +24,7 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section className="section-padding bg-secondary/30">
+    <section className="section-padding section-stone">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -46,7 +46,7 @@ const TestimonialsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="glass-card p-8"
+              className="glass-card p-8 hover:shadow-md transition-shadow"
             >
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, j) => (
@@ -57,7 +57,7 @@ const TestimonialsSection = () => {
               <div className="border-t border-border/40 pt-4">
                 <p className="font-heading font-semibold text-foreground text-sm">{t.name}</p>
                 <p className="text-muted-foreground text-xs font-body">{t.role}</p>
-                <span className="inline-block mt-3 text-xs bg-primary/20 text-primary px-3 py-1 rounded-full font-heading">
+                <span className="inline-block mt-3 text-xs bg-primary/10 text-primary px-3 py-1 rounded-full font-heading font-medium">
                   {t.metric}
                 </span>
               </div>

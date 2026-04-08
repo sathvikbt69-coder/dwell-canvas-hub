@@ -26,7 +26,7 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="section-padding bg-secondary/30">
+    <section id="services" className="section-padding section-stone">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -48,7 +48,7 @@ const ServicesSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="glass-card p-8 group hover:border-copper/40 transition-colors"
+              className="glass-card p-8 group hover:border-copper/40 hover:shadow-md transition-all"
             >
               <s.icon className="w-10 h-10 text-copper mb-6 group-hover:scale-110 transition-transform" />
               <h3 className="font-heading text-lg font-semibold text-foreground mb-3">{s.title}</h3>

@@ -25,6 +25,7 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         ivory: "hsl(var(--ivory))",
+        stone: "hsl(var(--stone))",
         copper: "hsl(var(--copper))",
         forest: "hsl(var(--forest))",
         primary: {
