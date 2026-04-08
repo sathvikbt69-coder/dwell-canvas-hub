@@ -1,45 +1,20 @@
-import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroBefore from "@/assets/hero-before.jpg";
-import heroAfter from "@/assets/hero-after.jpg";
 
 const HeroSection = () => {
-  const [progress, setProgress] = useState(0);
-
-  useEffect(() => {
-    const duration = 12000;
-    const interval = 50;
-    let elapsed = 0;
-    const timer = setInterval(() => {
-      elapsed += interval;
-      const cycle = (elapsed % (duration * 2)) / duration;
-      const p = cycle <= 1 ? cycle : 2 - cycle;
-      setProgress(p);
-    }, interval);
-    return () => clearInterval(timer);
-  }, []);
-
   return (
     <section className="relative h-screen overflow-hidden">
-      {/* Before image */}
-      <img
-        src={heroBefore}
-        alt="Empty office space before transformation"
+      {/* Background video */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
         className="absolute inset-0 w-full h-full object-cover"
-        width={1920}
-        height={1080}
-      />
-      {/* After image with animated opacity */}
-      <img
-        src={heroAfter}
-        alt="Modern premium office after transformation"
-        className="absolute inset-0 w-full h-full object-cover"
-        style={{ opacity: progress }}
-        width={1920}
-        height={1080}
-      />
+      >
+        <source src="/hero-video.mp4" type="video/mp4" />
+      </video>
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/40 to-background/90" />

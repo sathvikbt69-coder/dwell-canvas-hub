@@ -3,7 +3,7 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "Forma transformed our 15,000 sq.ft office in just 5 weeks. Employee satisfaction went up 40% within the first quarter.",
+    quote: "Worqo transformed our 15,000 sq.ft office in just 5 weeks. Employee satisfaction went up 40% within the first quarter.",
     name: "Priya Sharma",
     role: "VP Operations, TechStack India",
     metric: "40% ↑ employee satisfaction",

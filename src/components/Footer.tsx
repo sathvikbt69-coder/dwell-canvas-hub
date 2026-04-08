@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-10">
         <div>
           <h3 className="font-display text-2xl text-foreground mb-4">
-            Forma<span className="text-copper">.</span>
+            Worqo<span className="text-copper">.</span>
           </h3>
           <p className="text-muted-foreground text-sm font-body leading-relaxed">
             Premium commercial interior design studio based in Bangalore. We craft spaces that perform.
@@ -46,14 +46,14 @@ const Footer = () => {
             </li>
             <li className="flex items-center gap-2">
               <Mail className="w-4 h-4 shrink-0" />
-              hello@forma.design
+              hello@worqo.design
             </li>
           </ul>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-border/30 flex flex-col md:flex-row justify-between text-xs text-muted-foreground font-body">
-        <p>© 2026 Forma Interiors. All rights reserved.</p>
+        <p>© 2026 Worqo Interiors. All rights reserved.</p>
         <p>Designed with precision in Bangalore.</p>
       </div>
     </footer>

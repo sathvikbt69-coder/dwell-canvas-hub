@@ -62,7 +62,7 @@ const ProblemSolution = () => {
             className="glass-card p-8 md:p-10 border-primary/30"
           >
             <h3 className="font-heading text-xl font-semibold text-primary mb-6">
-              ✓ The Forma Way
+              ✓ The Worqo Way
             </h3>
             <ul className="space-y-4">
               {solutions.map((s) => (
