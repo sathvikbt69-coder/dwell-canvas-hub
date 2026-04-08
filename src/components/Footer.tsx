@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-10">
         <div>
           <h3 className="font-display text-2xl text-foreground mb-4">
-            Forma<span className="text-copper">.</span>
+            Worqo<span className="text-copper">.</span>
           </h3>
           <p className="text-muted-foreground text-sm font-body leading-relaxed">
             Premium commercial interior design studio based in Bangalore. We craft spaces that perform.
