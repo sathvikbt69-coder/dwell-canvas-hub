@@ -21,7 +21,7 @@ const WhyChooseUs = () => {
         >
           <p className="text-copper text-sm tracking-[0.3em] uppercase mb-4 font-body">Our edge</p>
           <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground">
-            Why 100+ companies trust Forma
+            Why 100+ companies trust Worqo
           </h2>
         </motion.div>
 
