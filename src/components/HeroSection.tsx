@@ -47,13 +47,13 @@ const HeroSection = () => {
             >
               We transform empty spaces into{" "}
               <span className="italic text-copper">high-performance</span>{" "}
-              workspaces in 6 weeks
+              workspaces that drive business growth.
             </h1>
             <p
               className="text-lg md:text-xl font-body max-w-xl mb-10"
               style={{ color: "rgba(255,255,255,0.9)", textShadow: heroTextShadow }}
             >
-              Designed to boost productivity, retention, and brand perception.
+              Designed to improve productivity, employee retention, and brand perception.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
